@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon — GirlFestival | Women-Only Festivals & Events Worldwide</title>
+  <meta name="description" content="This page is coming soon. GirlFestival is building the world's most comprehensive platform for women-only festivals, retreats, and events worldwide.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://girlfestival.com/coming-soon">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Coming Soon — GirlFestival">
+  <meta property="og:description" content="This page is coming soon. GirlFestival is building the world's most comprehensive platform for women-only festivals worldwide.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1529543544282-ea57407bc2e3?w=1200&h=630&fit=crop">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-primary: #a855f7;
+      --color-primary-dark: #7c3aed;
+      --color-secondary: #ec4899;
+      --color-accent: #fbbf24;
+      --color-white: #ffffff;
+      --color-gray-900: #1a1225;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-gray-900);
+      color: var(--color-white);
+      overflow: hidden;
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Animated background */
+    .bg-canvas {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .bg-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.35;
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .bg-orb-1 {
+      width: 400px;
+      height: 400px;
+      background: var(--color-primary);
+      top: -100px;
+      right: -100px;
+      animation-delay: 0s;
+    }
+
+    .bg-orb-2 {
+      width: 350px;
+      height: 350px;
+      background: var(--color-secondary);
+      bottom: -80px;
+      left: -80px;
+      animation-delay: -3s;
+    }
+
+    .bg-orb-3 {
+      width: 250px;
+      height: 250px;
+      background: var(--color-accent);
+      top: 40%;
+      left: 50%;
+      animation-delay: -5s;
+      opacity: 0.15;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-30px) scale(1.05); }
+    }
+
+    /* Content */
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 2rem;
+      max-width: 640px;
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+      text-decoration: none;
+      color: var(--color-white);
+    }
+
+    .logo-mark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      border-radius: 0.75rem;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 0.9375rem;
+      color: var(--color-white);
+    }
+
+    .logo-text {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.375rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.375rem 1rem;
+      background: rgba(168, 85, 247, 0.2);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--color-primary);
+    }
+
+    .desc {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 2.5rem;
+    }
+
+    .page-context {
+      display: inline-block;
+      padding: 0.5rem 1.25rem;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0.75rem;
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 2rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    @media (min-width: 480px) {
+      .actions {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.9375rem;
+      padding: 0.875rem 2rem;
+      border-radius: 9999px;
+      border: 2px solid transparent;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      color: var(--color-white);
+      box-shadow: 0 4px 15px rgba(168, 85, 247, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(168, 85, 247, 0.45);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--color-white);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* Sparkle animation */
+    .sparkles {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .sparkle {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: var(--color-white);
+      border-radius: 50%;
+      opacity: 0;
+      animation: sparkle 4s ease-in-out infinite;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 0; transform: scale(0); }
+      50% { opacity: 0.6; transform: scale(1); }
+    }
+
+    /* Footer */
+    .cs-footer {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .cs-footer p {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .cs-footer a {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .cs-footer a:hover {
+      color: var(--color-primary);
+    }
+  </style>
+</head>
+<body>
+  <!-- Animated background orbs -->
+  <div class="bg-canvas" aria-hidden="true">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
+
+  <!-- Sparkle particles -->
+  <div class="sparkles" aria-hidden="true"></div>
+
+  <main class="content">
+    <a href="/" class="logo" aria-label="GirlFestival Home">
+      <span class="logo-mark">GF</span>
+      <span class="logo-text">GirlFestival</span>
+    </a>
+
+    <div class="page-context" id="page-context"></div>
+
+    <span class="badge">Coming Soon</span>
+
+    <h1>Something Beautiful<br>Is <em>Being Built</em></h1>
+
+    <p class="desc">We're crafting this page with the same care we bring to mapping the world's most transformative women-only spaces. It will be worth the wait.</p>
+
+    <div class="actions">
+      <a href="/" class="btn btn-primary">Back to Home</a>
+      <a href="/#festival-themes" class="btn btn-ghost">Explore Themes</a>
+    </div>
+  </main>
+
+  <footer class="cs-footer">
+    <p>&copy; 2025 <a href="/">GirlFestival.com</a> — Where women gather, culture changes.</p>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // Show page context from URL param
+      var params = new URLSearchParams(window.location.search);
+      var ref = params.get('ref');
+      var contextEl = document.getElementById('page-context');
+      if (ref && contextEl) {
+        var label = ref.replace(/-/g, ' ').replace(/\b\w/g, function (c) {
+          return c.toUpperCase();
+        });
+        contextEl.textContent = label;
+        contextEl.style.display = 'inline-block';
+      } else if (contextEl) {
+        contextEl.style.display = 'none';
+      }
+
+      // Generate sparkle particles
+      var sparklesContainer = document.querySelector('.sparkles');
+      if (sparklesContainer) {
+        for (var i = 0; i < 30; i++) {
+          var sparkle = document.createElement('div');
+          sparkle.className = 'sparkle';
+          sparkle.style.left = Math.random() * 100 + '%';
+          sparkle.style.top = Math.random() * 100 + '%';
+          sparkle.style.animationDelay = Math.random() * 4 + 's';
+          sparkle.style.animationDuration = (3 + Math.random() * 3) + 's';
+          sparklesContainer.appendChild(sparkle);
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
